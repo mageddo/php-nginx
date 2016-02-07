@@ -28,7 +28,7 @@ elif [ "$1" == "clear" ]; then # delete all the images and containers generated 
 	echo "deleting the containers..."
 	docker rm -f $CONTAINER_NAME &> /dev/null # the output does not matter for me
 
-	echo "deletando imagens ..."
+	echo "deleting the images ..."
 	docker rmi -f $IMAGE_NAME &> /dev/null # the output does not matter for me
 
 else
