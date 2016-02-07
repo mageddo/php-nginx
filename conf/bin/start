@@ -1,5 +1,5 @@
 #!/bin/bash
 
-service php5-fpm restart
-service nginx restart
+/etc/init.d/php5-fpm restart
+/etc/init.d/nginx restart
 sleep infinity
