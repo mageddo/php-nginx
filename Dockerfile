@@ -7,6 +7,6 @@ RUN /opt/bin/install-nginx
 # clearing space
 RUN rm -rf /usr/share/doc/ && \
 	apt-get clean && apt-get clean all && \
-	rm -rf /tmp/
+	rm -rf /tmp/*
 
 CMD /opt/bin/start
