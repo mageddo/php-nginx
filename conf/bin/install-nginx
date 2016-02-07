@@ -1,0 +1,22 @@
+#!/bin/bash
+
+apt-get --yes --force-yes install nginx
+apt-get --yes --force-yes install php5-fpm php5-mysql
+
+
+# fazer um sed para substituir o 
+
+#  nano /etc/php5/fpm/php.ini
+# Find the line cgi.fix_pathinfo=1 and change the 1 to 0.
+
+# cgi.fix_pathinfo=0
+
+
+#nano /etc/php5/fpm/pool.d/www.conf
+
+
+#Find the line, listen = 127.0.0.1:9000, and change the 127.0.0.1:9000 to /var/run/php5-fpm.sock.
+
+#listen = /var/run/php5-fpm.sock
+
+
